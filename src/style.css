@@ -302,6 +302,123 @@ ul {
   font-size: 0.9rem;
 }
 
+/* ============================
+   REVIEWS SECTION
+============================ */
+.reviews-section {
+  background-color: var(--color-bg);
+  padding: 80px 40px;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.review-card {
+  background-color: var(--color-surface);
+  border-radius: 8px;
+  padding: 32px;
+  border: 1px solid rgba(231, 111, 81, 0.95);
+  box-shadow: 0 0 24px rgba(231, 111, 81, 0.08), var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 36px rgba(231, 111, 81, 0.18), var(--shadow-hover);
+}
+
+.review-rating {
+  margin-bottom: 18px;
+}
+
+.stars {
+  font-size: 1.3rem;
+  color: #FFB800;
+  letter-spacing: 2px;
+}
+
+.rating-text {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+  line-height: 1.8;
+  margin-bottom: 18px;
+  font-style: italic;
+}
+
+.review-author {
+  font-weight: 600;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+}
+
+/* ============================
+   PROCESS SECTION
+============================ */
+.process-section {
+  background-color: var(--color-surface);
+  padding: 80px 40px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+.process-card {
+  position: relative;
+  padding: 32px 24px;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(231, 111, 81, 0.05) 0%, rgba(244, 162, 97, 0.05) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(231, 111, 81, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(231, 111, 81, 0.6);
+}
+
+.process-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  opacity: 0.15;
+  position: absolute;
+  top: -20px;
+  left: 24px;
+  line-height: 1;
+}
+
+.process-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: var(--color-text-dark);
+  position: relative;
+  z-index: 1;
+}
+
+.process-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  position: relative;
+  z-index: 1;
+}
+
 @media (max-width: 860px) {
   .navbar {
     padding: 18px 24px;
