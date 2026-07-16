@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sweet Treats | Artisan Online Bakery</title>
+<title>Tasty Delights</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="src/style.css">
@@ -13,7 +13,11 @@
   <!-- ===== NAVIGATION ===== -->
   <header class="site-header">
     <nav class="navbar">
-      <div class="logo">Sweet Treats</div>
+      <div class="logo">Tasty Delights</div>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span>
+      </label>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#menu">Menu</a></li>
@@ -25,6 +29,7 @@
 
   <!-- ===== HERO SECTION ===== -->
   <section class="hero" id="home">
+    <img src="images/cupcakefh.jpg" alt="Cupcake" class="hero-image">
     <div class="hero-content">
       <h1>Freshly Baked Happiness, Delivered Daily</h1>
       <p>Handcrafted pastries, cakes, and treats made with love, real butter, and zero shortcuts. Taste the difference a small bakery makes.</p>
@@ -42,7 +47,7 @@
     <div class="product-grid">
 
       <article class="product-card">
-        <div class="product-image placeholder-croissant"></div>
+        <img src="images/firstpic.jpg" alt="Butter Croissant" class="product-image">
         <div class="product-info">
           <h3>Butter Croissant</h3>
           <p>Flaky, golden layers baked fresh every morning with premium French butter.</p>
@@ -51,7 +56,7 @@
       </article>
 
       <article class="product-card">
-        <div class="product-image placeholder-cupcake"></div>
+        <img src="images/vanilla.jpg" alt="Vanilla Cupcake" class="product-image">
         <div class="product-info">
           <h3>Vanilla Cupcake</h3>
           <p>Light vanilla sponge topped with silky buttercream and a hint of sea salt.</p>
@@ -60,7 +65,7 @@
       </article>
 
       <article class="product-card">
-        <div class="product-image placeholder-cake"></div>
+        <img src="images/cakes.jpg" alt="Chocolate Cake Slice" class="product-image">
         <div class="product-info">
           <h3>Custom Celebration Cake</h3>
           <p>Fully personalized cakes for birthdays, weddings, and every occasion worth celebrating.</p>
@@ -73,8 +78,8 @@
 
   <!-- ===== FOOTER / CONTACT ===== -->
   <footer class="site-footer" id="contact">
-    <p>&copy; 2026 Sweet Treats Bakery. All rights reserved.</p>
-    <p>123 Bakery Lane, Flour Town &bull; hello@sweettreats.com</p>
+    <p>&copy; 2026 Tasty Delights Bakery. All rights reserved.</p>
+    <p>123 Bakery Lane, Flour Town &bull; hello@tastydelights.com</p>
   </footer>
 
 </body>
